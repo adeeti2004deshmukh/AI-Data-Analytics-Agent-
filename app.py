@@ -4,7 +4,7 @@ import sqlite3
 import google.generativeai as genai
 import plotly.express as px
 import os
-from dotenv import load_dotenv
+
 st.set_page_config(
     page_title="AI Data Analytics Agent",
     page_icon="📊",
@@ -13,7 +13,7 @@ st.set_page_config(
 # =========================
 # Gemini Configuration
 # =========================
-load_dotenv()
+
 genai.configure(
     api_key=os.getenv("GEMINI_API_KEY")
 )
